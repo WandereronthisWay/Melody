@@ -130,3 +130,7 @@ opacity: 1;
  cursor: pointer;
 }
 
+path.current-floor {
+opacity: 1;
+}
+
