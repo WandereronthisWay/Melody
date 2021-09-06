@@ -114,7 +114,7 @@ opacity: 1;
  line-height: 44px;
  color: #635854;
 }
-.counter {
+.floor-counter {
 	font-family: 'Bebas Neue', sans-serif;
 	color: #635854;
 	font-size: 124px;
@@ -133,4 +133,155 @@ opacity: 1;
 path.current-floor {
 opacity: 1;
 }
+
+.modal-window {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.2s;
+}
+.is-open {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.modal-dialog {
+	position: relative;
+	max-width: 1000px;
+	min-height: 565px;
+	background-color: #fff;
+	flex-grow: 1;
+	display: flex;
+	transform: translateY(-10%);
+	transition: transform 0.2s, opacity 0.2s;
+	transition-delay: 0.2s;
+	opacity: 0; 
+}
+.is-open > .modal-dialog {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.modal-image {
+	background-color: #aeaeae;
+	width: 60%;
+ text-align: center;
+ padding: 50px;
+}
+.flats path {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.flats path:hover {
+opacity: 1;
+}
+.modal-title {
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: normal;
+ font-size: 24px;
+ line-height: 29px;
+}
+.modal-info {
+	width: 40%;
+	padding: 50px 46px;	
+}
+.flat-list {
+	list-style: none;
+	padding: 0;
+	margin-top: 55px;
+}
+.flat-item {
+	margin-bottom: 10px;
+}
+.flat-link {
+	color: #635854;
+	text-decoration: none;
+	font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+}
+.flat-link:hover {
+	color: #3596F5;
+}
+.modal-alert {
+	font-style: italic;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 19px;
+ color: #635854;
+ margin-top: 56px;
+}
+.modal-close-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #fff;
+	border: none;
+	margin-top: 38px;
+	margin-right: 27px;
+}
+
+
+ footer {
+ 	margin: auto;
+  height: 171px;
+  background-color: #D7D7D7;
+  background-size: cover;
+  display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+ }
+
+ .logo-footer {
+ margin-left: 255px;
+ display: flex;
+ justify-content: space-between;
+ }
+
+ .navbar-contacts_footer {
+ 	transform: translateX(-240px);
+
+ }
+ .navbar-text-footer {
+ 	display: block;
+ 	font-size: 14px;
+	margin: auto;
+	margin-bottom: 4px;
+ }
+
+ .navbar-phone-footer {
+ 	display: block;
+ 	font-weight: 700;
+ font-size: 17px;
+ line-height: 20px;
+ text-decoration: none;
+ color: black;
+ }
+
+ .social-network {
+ transform: translateX(-250%);
+
+ }
+ .social-logo {
+ 	padding: 5px;
+ }
+
+ .coordinats {
+transform: translateX(-70%);
+ }
+
+ .about {
+ 	padding: 10px;
+ 	color: #635854;
+ }
+
 
